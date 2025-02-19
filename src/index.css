@@ -13,56 +13,185 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
+  background-color: linear-gradient(109.6deg, rgb(245, 239, 249) 30.1%, rgb(207, 211, 236) 100.2%);
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: weight;
+}
+
+header {
+  border-bottom: 2px solid rgb(249, 247, 254);
+  padding: 10px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(65, 50, 100, 0.08) 0px 30px 50px;
+  margin: 30px auto;
+  padding: 30px;
+  width: 600px;
+}
+
+.searched-city {
+  color: black;
+  font-size: 38px;
+  line-height: 48px;
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.search-bar {
+  background-color: rgb(249, 247, 254);
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  padding: 15px 15px;
+  width: 80%;
 }
-
-button {
+.search-bar-button {
+  background: rgb(136, 93, 241);
+  border: none;
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  color: white;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 15px 20px;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+footer {
+  border-top: 2px solid rgb(249, 247, 254);
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+a {
+  color: rgb(136, 93, 241);
+}
+
+.weather-app-data {
+  display: flex;
+  justify-content: space-between;
+}
+.weather-details {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+.weather-details strong {
+  color: rgb(246, 82, 130);
+}
+.temperature-details {
+  display: flex;
+}
+.icon {
+  font-size: 88px;
+  height: 88px;
+}
+.temperature {
+  font-size: 88px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.unit {
+  font-size: 28px;
+  margin-top: 16px;
+}
+.weather-forecast {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.weather-forecast-day {
+  font-size: 15px;
+  justify-content: center;
+  width: 100%;
+}
+.weather-forecast-date {
+  color: rgba(39, 33, 66, 0.4);
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.weather-forecast-icon {
+  font-size: 35px;
+  text-align: center;
+}
+.weather-forecast-temperatures {
+  color: rgb(246, 82, 130);
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  text-align: center;
+}
+.weather-forecast-temperature {
+  font-size: 12px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+}
+.weather-forecast-temperature strong {
+  font-size: 15px;
+}
+@media (max-width: 900px) {
+  .container {
+    margin: 0;
+    padding: 10%;
+    width: 79%;
   }
-  a:hover {
-    color: #747bff;
+  .search-bar {
+    font-size: 12px;
+    width: 60%;
   }
-  button {
-    background-color: #f9f9f9;
+  .search-bar-button {
+    font-size: 10px;
+    margin-left: 15px;
+  }
+  .searched-city {
+    font-size: 30px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+  .weather-details {
+    font-size: 11px;
+    line-height: 14px;
+  }
+  .weather-app-data {
+    font-size: 10px;
+  }
+  .icon {
+    display: none;
+  }
+  .weather-forecast {
+    margin-top: 70px;
+  }
+  .weather-forecast-day {
+    width: 23%;
+    font-size: 30px;
+  }
+  .weather-forecast-temperatures {
+    margin-top: 7px;
+  }
+  .weather-forecast-temperatures strong {
+    font-size: 19px;
+  }
+  .weather-forecast-temperature {
+    font-size: 10px;
+    padding: 0 5px;
+
+  }
+  .temperature {
+    font-size: 40px;
+    margin-left: 5px;
+  }
+  .unit {
+    font-size: 15px;
+    margin-top: 7px;
+  }
+  footer {
+    font-size: 10px;
   }
 }
